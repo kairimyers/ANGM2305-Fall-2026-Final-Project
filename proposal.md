@@ -7,14 +7,18 @@
 The Custom Character Creator allows the user to choose what the character will be. This relevent to digital arts & media because we are generating new images from layers.
 
 ## Features
-- Character Role Selecter
-	- The user will be able to select what role their character can be. Example: Warrior, Mage, Archer, etc. The selection done from the terminal or from the display.
-- Character Type Selecter
-	- The user will be able to select the character type. Example: Human, Elf, Robot, etc. The selection done from the terminal or from the display.
+- Fullscreen Display
+  - Use pygame to display a fullscreen window to display the characters creation.
+- Character Role and Type Selecter
+	- The user will be able to select what role their character can be. Role Examples: Warrior, Mage, Archer, etc. Type Examples: Human, Elf, Robot, etc. The selection done from the terminal or from the display.
+  - Character models and accessories are hand drawn and saved as png files inside of the src/images folder.
+  - Use pygame.image.load to display the role and type image options on the screen using the pre drawn image files.
+  - We will use pygame.event to let the user click left or right to switch options. And the Enter Key to make selection.
 - Character Randomizer
 	- If the user doesn't want to create their own character then they can use the randomizer. The selection done from the terminal or from the display.
+  - Use the random function to generate a random character using the R key with pygame.event.
 - Full Character Saved and Displayed to User
-  - Images from the selections will be merged into a new image that displays the final character.
+  - Images from the selections will be merged using pillow into a new image that displays the final character. 
 
 ## Challenges
 - How to give the user the ability to select the character options.
